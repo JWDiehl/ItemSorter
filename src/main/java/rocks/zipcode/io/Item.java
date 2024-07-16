@@ -3,31 +3,55 @@ package rocks.zipcode.io;
 /**
  * @author leon on 30/01/2019.
  */
+
+//Part 1 - Create method definitions for class Item
+//Write method definitions for Item class.
+//Ensure 100% success rate of each test class in test.rocks.zipcode.io.item
+
 public class Item {
+
+    //Private variables per parameters in Item()
+    private Long id;
+    private String name;
+    private Double price;
+
+
     public Item() {
+        this.id = 0L;
+        this.name = "";
+        this.price = 0.01;
     }
 
     public Item(Long id, String name, Double price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
     }
 
     public String getName() {
-        return null;
+
+        return name;
     }
 
     public void setName(String name) {
+        this.name = name;
     }
 
     public Long getId() {
-        return null;
+
+        return id;
     }
 
     public void setId(Long id) {
+        this.id = id;
     }
 
     public Double getPrice() {
-        return null;
+
+        return price;
     }
 
     public void setPrice(Double price) {
+        this.price = price;
     }
 }
