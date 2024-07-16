@@ -43,7 +43,7 @@ public class SortByPriceTest {
         Item item2 = new Item(2L, "Banana", 1.5);
         Item item1 = new Item(3L, "Cherry", 2.0);
         Item[] itemsToSort = {item2, item1, item3};
-        Item[] expected = {item1, item2, item3}; // Expected sorted order by price
+        Item[] expected = {item3, item2, item1}; // Expected sorted order by price
         ItemSorter itemSorter = new ItemSorter(itemsToSort);
         Comparator<Item> comparator = new SortByPriceComparator(); // Need to create classes
 
@@ -61,7 +61,7 @@ public class SortByPriceTest {
         Item item2 = new Item(2L, "Banana", 1.5);
         Item item1 = new Item(3L, "Cherry", 2.0);
         Item[] itemsToSort = {item2, item1, item3};
-        Item[] expected = {item1, item3, item2}; // Expected sorted order by price
+        Item[] expected = {item3, item2, item1}; // Expected sorted order by price
         ItemSorter itemSorter = new ItemSorter(itemsToSort);
         Comparator<Item> comparator = new SortByPriceComparator(); // Need to create classes
 
